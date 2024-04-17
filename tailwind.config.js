@@ -4,7 +4,11 @@ module.exports = {
         "./src/**/*.{html,ts}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            backgroundImage: {
+                'bgSpan': "url(./assets/historia/bgSpan.png)"
+            }
+        },
     },
     plugins: [],
 }
