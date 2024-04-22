@@ -1,0 +1,15 @@
+<h2 class="text-4xl sm:text-7xl uppercase font-bold">Crema de Sotol de chocolate</h2>
+
+<div [ngClass]="{'transition-all':transitionClass}" *ngIf="!sotolChocolate">
+    <p class="mt-4 mb-4 text-4xl text-justify">Hecho con Sotol Hacienda de Chihuahua, con un delicioso sabor de chocolate.
+    </p>
+</div>
+<a class="bg-black text-white mr-4 p-3 cursor-pointer rounded" (click)="sotolChocolate = !sotolChocolate">Conoce Mas</a>
+
+<div [ngClass]="{'transition-all':transitionClass}" *ngIf="sotolChocolate">
+    <p class="text-xl mt-4 text-center font-bold">Crema de sotol chocolate</p>
+    <p class="text-xl font-thin mb-4">Liderando una nueva generación de cremas a base de destilados, Hacienda de Chihuahua se enorgullece en presentar la Crema de Sotol Chocolate, una bebida extraordinariamente suave con una sofisticada complejidad natural. </p>
+    <p class="text-xl font-thin mb-4">Una crema Súper Premium perfectamente equilibrada, con un delicioso sabor de chocolate, presentada en una elegante botella con textura artesanal. </p>
+
+    <a class="bg-black text-white mr-4 p-3 cursor-pointer rounded" href="/shop">Tienda</a>
+</div>

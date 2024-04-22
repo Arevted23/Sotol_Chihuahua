@@ -1,0 +1,17 @@
+<h2 class="text-4xl sm:text-7xl uppercase font-bold">Sotol H5</h2>
+
+<div [ngClass]="{'transition-all':transitionClass}" *ngIf="!sotolH5">
+    <p class="mt-4 mb-4 text-4xl text-justify">La versión mas fina del portafolio Hacienda de Chihuahua. Extra-Añejo por mas de 5 años, se manifiesta la armonía en su complejo y elegante sabor y aroma.
+    </p>
+</div>
+<a class="bg-black text-white mr-4 p-3 cursor-pointer rounded" (click)="sotolH5 = !sotolH5">Conoce Mas</a>
+
+<div [ngClass]="{'transition-all':transitionClass}" *ngIf="sotolH5">
+    <p class="text-xl mt-4 text-center font-bold">Extraído de la planta de Sotol 100% silvestre y extra- añejado al menos durante 5 años.</p>
+    <p class="text-xl font-thin mb-4">
+        Embotellado desde una barrica de roble blanco francés. Estamos orgullosos de ofrecer a aquellos que aprecian el gran sabor, Sotol Hacienda de Chihuahua Extra-Añejo H5, uno de los mejores destilados del mundo. </p>
+    <p class="text-xl font-thin mb-4">Su proceso de cocción, fermentación, destilación y maduración es meticulosamente supervisado. </p>
+    <p class="text-xl font-thin mb-4">La joya más brillante de la corona de la familia de Hacienda de Chihuahua, este fascinante destilado es fermentado con levadura de champagne y extra-añejado en barricas nuevas de roble blanco francés durante al menos 5 años. Posee una extraordinaria
+        riqueza en su fino y único aroma y sabor.</p>
+    <a class="bg-black text-white mr-4 p-3 cursor-pointer rounded" href="/shop">Tienda</a>
+</div>

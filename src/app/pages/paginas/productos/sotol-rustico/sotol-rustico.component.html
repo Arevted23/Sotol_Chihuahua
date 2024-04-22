@@ -1,0 +1,11 @@
+<h2 class="text-4xl sm:text-7xl uppercase font-bold">Sotol Rustico</h2>
+<div [ngClass]="{'transition-all':transitionClass}" *ngIf="!sotolRustico">
+    <p class="mt-4 mb-4 text-4xl text-justify">Sotol con mayor aroma y sabor. Acentúa la naturaleza de lo silvestre.</p>
+</div>
+
+<a class="bg-black text-white mr-4 p-3 cursor-pointer rounded" (click)="sotolRustico = !sotolRustico">Conoce Mas</a>
+
+<div [ngClass]="{'transition-all':transitionClass}" *ngIf="sotolRustico">
+    <p class="text-2xl font-thin mb-4">Extraído de la planta de Sotol 100% silvestre, acentúa su naturaleza con un verdadero sabor fresco, herbal y una ligera nota de sabor a tierra. Con 45% de alcohol, conserva la naturaleza original de esta majestuosa bebida. </p>
+    <a class="bg-black text-white mr-4 p-3 cursor-pointer rounded" href="/shop">Tienda</a>
+</div>

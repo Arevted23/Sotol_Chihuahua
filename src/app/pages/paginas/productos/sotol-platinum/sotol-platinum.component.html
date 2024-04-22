@@ -1,0 +1,17 @@
+<h2 class="text-4xl sm:text-7xl uppercase font-bold">Sotol Platinum</h2>
+
+<div [ngClass]="{'transition-all':transitionClass}" *ngIf="!sotolPlatinum">
+    <p class="mt-4 mb-4 text-4xl text-justify">Fascinante, diferente y exuberante sabor y aroma extra fresco, casi opulento. Triple destilación.
+    </p>
+</div>
+
+<a class="bg-black text-white mr-4 p-3 cursor-pointer rounded" (click)="sotolPlatinum = !sotolPlatinum">Conoce Mas</a>
+
+<div [ngClass]="{'transition-all':transitionClass}" *ngIf="sotolPlatinum">
+    <h3 class="text-xl mt-4 text-center">Extraído de la planta de Sotol 100% silvestre desde el desierto hasta su paladar. Triplemente destilado.</h3>
+    <p class="text-sm font-thin mb-4"><span class="font-bold">Sotol Platinum Hacienda de Chihuahua</span> proporciona el sabor más genuino de esta exquisita planta de Sotol silvestre que sólo se encuentra en el desierto de Chihuahua. A fin de elaborar este excepcional destilado, Hacienda
+        de Chihuahua selecciona una sola especie de planta de Sotol que muestra los más altos niveles de calidad en cuanto a tamaño y madurez. </p>
+    <p class="text-sm font-thin mb-4">Bellamente presentado en una botella de lujo ultra premium, distintivo del portafolio de Hacienda de Chihuahua.
+    </p>
+    <a class="bg-black text-white mr-4 p-3 cursor-pointer rounded" href="/shop">Tienda</a>
+</div>

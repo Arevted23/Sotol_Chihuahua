@@ -1,0 +1,15 @@
+<h2 class="text-4xl sm:text-7xl uppercase font-bold">Sotol Oro Puro</h2>
+<div [ngClass]="{'transition-all':transitionClass}" *ngIf="!sotolOro">
+    <p class="mt-4 mb-4 text-4xl text-justify">Añejado durante 2 años y embotellado directo de la barrica con hojuelas de oro de 24 kilates.
+    </p>
+</div>
+<a class="bg-black text-white mr-4 p-3 cursor-pointer rounded" (click)="sotolOro = !sotolOro">Conoce Mas</a>
+
+<div [ngClass]="{'transition-all':transitionClass}" *ngIf="sotolOro">
+    <p class="text-xl mt-4 text-center font-bold">Extraído de la planta de Sotol 100% silvestre. 2 años de añejamiento. Embotellado desde una barrica enumerada de roble blanco francés.</p>
+    <p class="text-xl font-thin mb-4">Esta fascinante bebida ha sido triplemente destilada en un alambique de cobre de doble columna, ofreciendo un mayor grado de pureza, lo que le confiere una extraordinaria riqueza en su excepcional y único aroma y sabor, lo cual es reconocido por nuestro
+        maestro destilador en la hermosa y elegante botella que distingue a está galardonada presentación. </p>
+    <p class="text-xl font-thin mb-4">Ofrece una mayor suavidad y textura debido a las hojuelas de oro puro.</p>
+    <p class="text-xl font-thin mb-4">En cada trago vales mas.</p>
+    <a class="bg-black text-white mr-4 p-3 cursor-pointer rounded" href="/shop">Tienda</a>
+</div>

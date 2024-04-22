@@ -1,0 +1,19 @@
+<h2 class="text-4xl sm:text-7xl uppercase font-bold mb-4">Sotol Reposado</h2>
+
+<div [ngClass]="{'transition-all':transitionClass}" *ngIf="!sotolReposado">
+    <p class="mt-4 mb-4 text-4xl text-justify">Añejado en barricas de roble blanco francés. Balance perfecto entre la barrica y el Sotol. Suave y sofisticado.
+    </p>
+</div>
+
+<a class="bg-black text-white mr-4 p-3 cursor-pointer rounded" (click)="sotolReposado = !sotolReposado">Conoce Mas</a>
+
+<div [ngClass]="{'transition-all':transitionClass}" *ngIf="sotolReposado">
+    <p class="text-xl mt-4 text-center">Extraído de la planta de Sotol 100% silvestre, añejado 12 meses en barricas de roble blanco francés.
+    </p>
+    <p class="text-sm font-thin">“El buqué del Sotol comienza con un sabor emocionante, más floral que vegetal, más vainilla -un poco picante- la etapa media pasa sin ver disminución de fuerza aromática mientras la esencia de vainilla y roble se profundiza y el aspecto floral se
+        desvanece – el resultado final es de armonía y elegancia… hay una complejidad subestimada en el Sotol Hacienda Chihuahua que otros destilados no poseen – intrigantemente diferente; en el paladar, el sabor entrante es exuberante, tanto regio como
+        gentil, sabores de madera y fruta seca saludan a la papilas gustativas – en el medio paladar se vuelve más vegetal como lo hace la planta de Sotol, completa con notas ligeras de pimienta y eneldo suave; el sabor remanente es lujoso y largo, sabores
+        profundos de vainilla y roble encantan al paladar;… para darle crédito, ofrece una alternativa que es simultáneamente compleja y elegante.”
+        <blockquote class="mb-4">Spirit Journal</blockquote>
+        <a class="bg-black text-white mt-8 p-3 cursor-pointer rounded" href="/shop">Tienda</a>
+</div>

@@ -1,0 +1,18 @@
+<h2 class="text-4xl sm:text-7xl uppercase font-bold mb-4">Sotol Plata Alta</h2>
+
+<div [ngClass]="{'transition-all':transitionClass}" *ngIf="!sotolPlata">
+    <p class="mt-4 mb-4 text-4xl text-justify">Directo del desierto al paladar. Extremadamente suave y fresco, sabor auténtico y aroma de planta de Sotol silvestre.</p>
+</div>
+
+<a class="bg-black text-white mr-4 p-3 cursor-pointer rounded" (click)="sotolPlata = !sotolPlata">Conoce Mas</a>
+
+<div [ngClass]="{'transition-all':transitionClass}" *ngIf="sotolPlata">
+    <h3 class="text-xl mt-4 text-center">Extraido de la planta de Sotol 100% silvestre llega directo del desierto para ti.</h3>
+    <p class="text-sm font-thin mb-4"><span class="font-bold">Sotol Plata Hacienda de Chihuahua</span> es nuestra versión más pura de este exquisito destilado. </p>
+    <p class="text-sm font-thin">“Extremadamente suave y fresco, este destilado ganador de premios ofrece el gran sabor de la planta de Sotol y la complejidad que la hace diferente de cualquier otra bebida de su tipo. El buqué es agradable similar a menta y vegetal. La primer impresión
+        en el paladar es limpia y enfocada; el medio paladar muestra un toque de delicada dulzura de la planta de Sotol.”
+        <blockquote class="mb-4">-Wine Entusiast</blockquote>
+        <p class="text-sm font-thin mb-4">“Es el destilado del Estado de Chihuahua y tiene un sabor que se distingue mas allá de su nombre. Esta hecho de una planta silvestre que contribuye a un sabor óptimo. Este producto es una excelente opción, más herbal y sutil” Robert Heugel / drinkdogma.com</p>
+        <p class="text-sm font-thin mb-4">Un destilado generoso que puede ser disfrutado tanto solo o con tú mezcla preferida. </p>
+        <a class="bg-black text-white mr-4 p-3 cursor-pointer rounded" href="/shop">Tienda</a>
+</div>
