@@ -4,6 +4,8 @@ import { HistoriaComponent } from './paginas/historia/historia.component';
 import { CertificacionesComponent } from './paginas/certificaciones/certificaciones.component';
 import { ProductosComponent } from './paginas/productos/productos.component';
 import { ProductosModule } from './paginas/productos/productos.module';
+import { MixologiaHomeComponent } from './paginas/mixologia/mixologia-home/mixologia-home.component';
+import { ContactoComponent } from './paginas/contacto/contacto.component';
 
 
 
@@ -12,15 +14,16 @@ import { ProductosModule } from './paginas/productos/productos.module';
   declarations: [
     HistoriaComponent,
     CertificacionesComponent,
-    ProductosComponent
+    ProductosComponent,
+    ContactoComponent,
+
   ],
   imports: [
     CommonModule,
-    ProductosModule
-
+    ProductosModule,
   ],
   exports:[
-    HistoriaComponent
+
   ]
 
 })

@@ -4,28 +4,38 @@ import { HomeComponent } from './shared/pages/home/home.component';
 import { HistoriaComponent } from './pages/paginas/historia/historia.component';
 import { CertificacionesComponent } from './pages/paginas/certificaciones/certificaciones.component';
 import { ProductosComponent } from './pages/paginas/productos/productos.component';
+import { MixologiaHomeComponent } from './pages/paginas/mixologia/mixologia-home/mixologia-home.component';
+import { ContactoComponent } from './pages/paginas/contacto/contacto.component';
 
 const routes: Routes = [
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
   },
   {
     path: 'historia',
-    component: HistoriaComponent
+    component: HistoriaComponent,
   },
   {
     path: 'certificacion',
-    component: CertificacionesComponent
+    component: CertificacionesComponent,
   },
   {
     path: 'productos',
-    component: ProductosComponent
+    component: ProductosComponent,
+  },
+  {
+    path: 'mixologia',
+    component: MixologiaHomeComponent,
+  },
+  {
+    path: 'contacto',
+    component: ContactoComponent,
   },
   {
     path: '**',
-    redirectTo: 'home'
-  }
+    redirectTo: 'home',
+  },
 ];
 
 @NgModule({

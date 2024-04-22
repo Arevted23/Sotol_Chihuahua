@@ -3,3 +3,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*BgGlobal*/
+
+.bg-Historia {
+    z-index: unset;
+    background-image: url('./assets/historia/bgSpan.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-mixo {
+    background-image: url('./assets/mixologia/bgmixo.png');
+    background-position: center center;
+    background-repeat: repeat;
+}
+
+
+/**/
+
+.bghome {
+    /*TODO: arreglar path de img background*/
+    background-image: url('./assets/homepage/bgHomePageII.jpeg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bgSecret {
+    background-image: url('./assets/homepage/FondoSotolHomepage.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bgMixologia {
+    background-image: url('./assets/homepage/mixologia.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
