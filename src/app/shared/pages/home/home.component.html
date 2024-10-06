@@ -1,37 +1,49 @@
-<header class="bg-Home text-center uppercase text-white">
-    <article class="bghome p-10 font-medium text-4xl sm:text-9xl ">
-        <!-- <video src="http://sotol.com/wp-content/uploads/2022/02/Homepage-video-sotol-v2.mp4" autoplay="true" muted="true" loop="true"></video> -->
-        <h1 class="transition-ease">Hacienda de chihuahua</h1>
-        <img src="./assets/homepage/Botellas-3snsombra.png" alt="Botellas-3snsombra">
-    </article>
+<header class="{{ HomeStyles.localStyleHeaderTag }}">
+  <article class="{{ HomeStyles.localStyleArticleTag }}">
+    <!-- <video src="http://sotol.com/wp-content/uploads/2022/02/Homepage-video-sotol-v2.mp4" autoplay="true" muted="true" loop="true"></video> -->
+    <h1 class="transition-ease">{{ HomeLocales.localTitleHome }}</h1>
+    <img
+      src="./assets/homepage/Botellas-3snsombra.png"
+      alt="Botellas-3snsombra"
+    />
+  </article>
 
+  <section class="{{ HomeStyles.localStyleSectionTag }}">
+    <div>
+      <h2 class="{{ HomeStyles.localStyleH2tag }}">
+        {{ HomeLocales.localSectionTitleTwo }}
+      </h2>
+    </div>
+    <div>
+      <a class="{{ HomeStyles.localStyleAnchorTag }}" routerLink="historia">{{
+        HomeLocales.localBtnSectionDescription
+      }}</a>
+    </div>
+  </section>
 
-    <section class="bgSecret p-10 font-medium text-2xl sm:text-6xl pl-12 pr-12">
-        <div>
-            <h2 class="text-black m-0 sm:ml-16 sm:mr-16">El secreto mejor guardado del desierto Chihuahuense</h2>
+  <section class="{{ HomeStyles.section.localStyleSectionMain }}">
+    <div>
+      <img src="./assets/homepage/Ranch-Water_JM-1V2.png" alt="RanchWater" />
+    </div>
+    <div>
+      <h3 class="{{ HomeStyles.section.localStyleH3tag }}">
+        {{ HomeLocales.localSectionTitleThree }}
+      </h3>
+      <p class="text-2xl mt-4 mb-4">
+        {{ HomeLocales.localDescriptionMixology }}
+      </p>
+      <article class="{{ HomeStyles.section.localStyleArticleTag }}">
+        <div class="{{ HomeStyles.section.localStyleDivTag }}">
+          <a routerLink="mixologia" class="hover:cursor-pointer">{{
+            HomeLocales.localLinkMixSectionThree
+          }}</a>
         </div>
-        <div>
-            <a class="bg-black text-sm p-2 hover:cursor-pointer" routerLink="historia">Conoce Nuestra Historia</a>
+        <div class="{{ HomeStyles.section.localStyleDivTag }}">
+          <a routerLink="productos" class="hover:cursor-pointer">{{
+            HomeLocales.localKnowProductLinks
+          }}</a>
         </div>
-    </section>
-
-
-    <section class="p-20 sm:p-40 bgMixologia grid gap-4 place-items-center sm:grid-cols-2">
-        <div>
-            <img src="./assets/homepage/Ranch-Water_JM-1V2.png" alt="RanchWater">
-        </div>
-        <div>
-            <h3 class="text-3xl sm:text-7xl">Mixologia</h3>
-            <p class="text-2xl mt-4 mb-4">Descubre, prepara y disfruta de la mixologia que tenemos para ti con nuestro sotol de hacienda chihuahua.</p>
-            <article class="grid gap-4 text-black sm:grid-cols-2">
-                <div class="bg-white hover:transition-all hover:cursor-pointer hover:bg-black hover:text-white p-1">
-                    <a routerLink="mixologia" class="hover:cursor-pointer">Mixologia</a>
-                </div>
-                <div class="bg-white hover:transition-all hover:cursor-pointer hover:bg-black hover:text-white p-1">
-                    <a routerLink="productos" class="hover:cursor-pointer">Conoce los productos</a>
-                </div>
-
-            </article>
-        </div>
-    </section>
+      </article>
+    </div>
+  </section>
 </header>
